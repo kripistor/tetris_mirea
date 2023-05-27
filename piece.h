@@ -4,13 +4,13 @@
 
 enum PieceColor {
 	EMPTY,
-	CYAN,	// I
-	BLUE,	// J
-	ORANGE, // L
-	YELLOW, // O
-	GREEN,  // S
-	PURPLE, // T
-	RED		// Z
+	CYAN,
+	BLUE,
+	ORANGE,
+	YELLOW,
+	GREEN,
+	PURPLE,
+	RED
 };
 
 struct Piece

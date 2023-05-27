@@ -38,7 +38,7 @@ private:
 	static constexpr int cell_size = 25;
 
 	PieceColor grid[columns][rows] = {};
-	std::array<sf::Color, 8> cell_color;
+	std::array<sf::Color, 9> cell_color;
 
 	int count_score = 0;
 	sf::Color color_wall;

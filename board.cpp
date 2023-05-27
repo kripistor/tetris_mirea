@@ -41,8 +41,7 @@ void Board::draw(sf::RenderTarget& target, sf::RenderStates states) const
 
 void Board::add_piece(const Piece& piece)
 {
-	for (int x = 0; x < 4; x++)
-	{
+	for (int x = 0; x < 4; x++){
 		for (int y = 0; y < 4; y++)
 		{
 			if (!piece.shape[y][x]) continue;

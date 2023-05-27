@@ -13,10 +13,15 @@ Tetris::Tetris()
 	set_next_piece();
 	set_piece();
 	next_piece_board.set_wall_color(sf::Color::Transparent);
+    if (!icon.image.loadFromFile("img/icon.jpg"))
+    {
+        std::cerr << "failed icon\n";
+    }
+    window.setIcon(icon.image.getSize().x, icon.image.getSize().y, icon.image.getPixelsPtr());
 	if (!font.loadFromFile("fonts/Squarewave.ttf")){
         std::cerr << "failed font\n";
     }
-    if (!mirea.texture.loadFromFile("img/1.jpg")){
+    if (!mirea.texture.loadFromFile("img/mirea.jpg")){
         std::cerr << "failed img\n";
     }
     mirea.sprite.setTexture(mirea.texture);

@@ -49,5 +49,9 @@ private:
         sf::Sprite sprite;
     };
     Mirea mirea;
+    struct Icon{
+        sf::Image image;
+    };
+    Icon icon;
 	bool game_over;
 };

@@ -16,7 +16,7 @@ Tetris::Tetris()
 	if (!font.loadFromFile("fonts/Squarewave.ttf")){
         std::cerr << "failed font\n";
     }
-    if (!mirea.texture.loadFromFile("E:\\Work\\C++\\tetris-mirea\\img\\900px-MIREA_logo.png")){
+    if (!mirea.texture.loadFromFile("img/1.jpg")){
         std::cerr << "failed img\n";
     }
     mirea.sprite.setTexture(mirea.texture);

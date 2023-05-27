@@ -44,6 +44,10 @@ private:
 	sf::Font font;
 	sf::Text game_over_msg;
 	sf::Text next_shape_msg;
-
+    struct Mirea {
+        sf::Texture texture;
+        sf::Sprite sprite;
+    };
+    Mirea mirea;
 	bool game_over;
 };

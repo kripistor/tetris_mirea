@@ -16,23 +16,26 @@ Tetris::Tetris()
 	if (!font.loadFromFile("fonts/Squarewave.ttf")){
         std::cerr << "failed font\n";
     }
-
+    mirea.texture.loadFromFile("E:\\Work\\C++\\tetris-mirea\\900px-MIREA_logo.png");
+    mirea.sprite.setTexture(mirea.texture);
+    mirea.sprite.setPosition(310, 20);
+    mirea.sprite.setScale(0.25, 0.25);
 	highscore.text.setFont(font);
 	highscore.text.setString("Score");
-	highscore.text.setPosition({ 400,50 });
+	highscore.text.setPosition({ 400,250 });
 
 	highscore.cur_score.setFont(font);
 	highscore.cur_score.setCharacterSize(50);
-	highscore.cur_score.setPosition({ 415,80 });
+	highscore.cur_score.setPosition({ 415,280 });
 	highscore.score = 0;
 
 	game_over_msg.setFont(font);
 	game_over_msg.setString("Game Over!");
-	game_over_msg.setPosition({ 250,250 });
+	game_over_msg.setPosition({ 250,350 });
 
 	next_shape_msg.setFont(font);
 	next_shape_msg.setString("Next Shape");
-	next_shape_msg.setPosition({ 375,300 });
+	next_shape_msg.setPosition({ 375,400 });
 
 	trans.scale({ 0.5,0.5 });
 	trans.translate(675, 750);
@@ -138,6 +141,7 @@ void Tetris::render()
 		window.draw(board);
 		window.draw(next_piece_board, trans);
 		window.draw(highscore.text);
+        window.draw(mirea.sprite);
 		window.draw(highscore.cur_score);
 		window.draw(next_shape_msg);
 		board.remove_piece(piece);

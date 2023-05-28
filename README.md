@@ -9,6 +9,9 @@ ____
 - `UP` - Поворот фигуры на 90 градусов.
 ____
 # Установка
+### Используя архив
+1. Скачайте архив [tetris_mirea.rar](https://github.com/kripistor/tetris_mirea/blob/master/tetris_mirea.rar)
+2. Разархивируйте архив и запустите файл `tetris_mirea.exe`
 ### Используя CMake
 1. Скачайте или скопируйте репозиторий
 2. Скачайте библиотеку [SFML](https://www.sfml-dev.org/download/sfml/2.5.1/)

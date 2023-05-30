@@ -38,7 +38,7 @@ Tetris::Tetris()
 
 	game_over_msg.setFont(font);
 	game_over_msg.setString("Game Over!");
-	game_over_msg.setPosition({ 250,350 });
+	game_over_msg.setPosition({ 240,250 });
 
 	next_shape_msg.setFont(font);
 	next_shape_msg.setString("Next Shape");
